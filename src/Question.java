@@ -1,6 +1,7 @@
+
 /* Irene Feng 10/12/2022
 A question class with Answers.
-*/ 
+*/
 import java.util.Scanner;
 
 public class Question {
@@ -21,25 +22,22 @@ public class Question {
             System.out.println("[" + choice + "]:" +
                     this.possibleAnswers[i].label);
         }
-        if(sc.hasNextInt()){
+        if (sc.hasNextInt()) {
             int ans = sc.nextInt();
-            if(ans <= 4){
+            if (ans <= 4) {
                 return possibleAnswers[ans - 1].cat;
-            }
-            else{
+            } else {
                 Scanner pc = new Scanner(System.in);
                 System.out.println("Unidentifiable input. Please enter a number 1 through 4");
                 return ask(pc);
             }
-            
-        }
-        else{
+
+        } else {
             Scanner pc = new Scanner(System.in);
             System.out.println("Unidentifiable input. Please enter a number 1 through 4");
             return ask(pc);
         }
-        
-        
+
     }
 
 }

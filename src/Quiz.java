@@ -12,14 +12,17 @@ public class Quiz {
                 // Create Categories
                 Category answer = new Category("Answer.java",
                                 "Efficient, you may not be the most complex file but without you everything would fall apart");
-                Category category = new Category("Category.java", "Your greatest strength is your personality, and you being unapologetically yourself inspires those around you");
-                Category question = new Category("Question.java", "A calm and intelligent mind, you question the world around you and seek out knowledge in everything");
-                Category quiz = new Category("Quiz.java", "You are a leader, the backbone of any group. When you speak, everyone listens.");
-                
+                Category category = new Category("Category.java",
+                                "Your greatest strength is your personality, and you being unapologetically yourself inspires those around you");
+                Category question = new Category("Question.java",
+                                "A calm and intelligent mind, you question the world around you and seek out knowledge in everything");
+                Category quiz = new Category("Quiz.java",
+                                "You are a leader, the backbone of any group. When you speak, everyone listens.");
+
                 // Create Questions
                 Question q1 = new Question("What is your favorite color?");
                 q1.possibleAnswers[0] = new Answer("Red", answer);
-                q1.possibleAnswers[1] = new Answer("Yellow",category);
+                q1.possibleAnswers[1] = new Answer("Yellow", category);
                 q1.possibleAnswers[2] = new Answer("Blue", question);
                 q1.possibleAnswers[3] = new Answer("Green", quiz);
 
@@ -29,7 +32,8 @@ public class Quiz {
                 q2.possibleAnswers[2] = new Answer("Skip the planning stage and go straight into writing", category);
                 q2.possibleAnswers[3] = new Answer("Think deeply about the essay topic", question);
 
-                Question q3 = new Question("If you could be anywhere(out of these options) right now, where would you be?");
+                Question q3 = new Question(
+                                "If you could be anywhere(out of these options) right now, where would you be?");
                 q3.possibleAnswers[0] = new Answer("library", answer);
                 q3.possibleAnswers[1] = new Answer("Some place I’ve never been before", quiz);
                 q3.possibleAnswers[2] = new Answer("Home", answer);
@@ -67,7 +71,7 @@ public class Quiz {
 
                 // For each question, ask, read input, store answer.1
                 gameIntro();
-                Question[] qList = { q1, q2, q3, q4, q5, q6, q7, q8};
+                Question[] qList = { q1, q2, q3, q4, q5, q6, q7, q8 };
                 for (Question q : qList) {
                         Category c = q.ask(sc);
                         c.points++;
@@ -94,7 +98,7 @@ public class Quiz {
         }
 
         // returns the index that is the max
-        // the tie breaker is the first Category that has the count is the "max" :/ 
+        // the tie breaker is the first Category that has the count is the "max" :/
         public static int getMostPopularCatIndex(Category[] counts) {
                 int maxCount = 0;
                 int maxIndex = 0;
