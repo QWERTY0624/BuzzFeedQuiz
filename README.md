@@ -1,25 +1,34 @@
-## Getting Started
+## Test Cases
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+When you play 3 times and get answer twice and category once:
 
-## Folder Structure
+If you were a BuzzFeedQuiz.java file, you would be Category.java.
+Your greatest strength is your personality, and you being unapologetically yourself inspires those around you
+category popularity:
+Answer.java, 2
+Quiz.java, 0
+Question.java, 0
+Category.java, 1
+The most popular category is: Answer.java
 
-The workspace contains two folders by default, where:
+When you play 3 times and get category twice and answer once:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+If you were a BuzzFeedQuiz.java file, you would be Answer.java.
+Efficient, you may not be the most complex file but without you everything would fall apart
+category popularity:
+Answer.java, 1
+Quiz.java, 0
+Question.java, 0
+Category.java, 2
+The most popular category is: Category.java
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+When you play 3 times and get question twice and quiz once:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-
-## How to run
-
-```
-javac *.java -d bin
-```
-Run `Quiz.java` file in src folder. # BuzzFeedQuizQuiz
+If you were a BuzzFeedQuiz.java file, you would be Question.java.
+A calm and intelligent mind, you question the world around you and seek out knowledge in everything
+category popularity:
+Answer.java, 0
+Quiz.java, 1
+Question.java, 2
+Category.java, 0
+The most popular category is: Question.java
