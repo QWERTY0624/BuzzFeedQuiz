@@ -73,7 +73,7 @@ public class Quiz {
                 q7.possibleAnswers[3] = new Answer("Hang out with friends", category);
 
                 Question q8 = new Question("When do you go to bed each night?");
-                q8.possibleAnswers[0] = new Answer("Once I finish the book I am reading", answer);
+                q8.possibleAnswers[0] = new Answer("Once I finish the book I am reading", question);
                 q8.possibleAnswers[1] = new Answer("Once I finish all the work I am doing", quiz);
                 q8.possibleAnswers[2] = new Answer("After all of my friends go to sleep", category);
                 q8.possibleAnswers[3] = new Answer("8 hours before I wake up", answer);
